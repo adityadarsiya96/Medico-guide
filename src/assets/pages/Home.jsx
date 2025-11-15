@@ -102,52 +102,93 @@ const Home = () => {
         </div>
       </section>
       <section className="bg-gradient-to-b from-pink-50 via-white to-gray-100 py-20 px-8">
-  <div className="text-center mb-12">
-    <h1 className="text-4xl font-semibold text-gray-800">How to Get Started?</h1>
-    <h2 className="text-lg text-gray-600 mt-3">
-      In just 4 simple steps, you can start your own mentorship.
-    </h2>
-    <Link
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-semibold text-gray-800">How to Get Started?</h1>
+          <h2 className="text-lg text-gray-600 mt-3">
+            In just 4 simple steps, you can start your own mentorship.
+          </h2>
+          <Link
             to="/login"
             className="inline-block mt-4 text-xl font-semibold bg-gradient-to-r from-[#f43f5e] via-[#db2777] to-[#ef4444] text-white rounded-full px-8 py-3 shadow-md hover:scale-105 transition-all duration-300"
           >
             Take a free trial
           </Link>
 
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
+            <div className="text-pink-500 text-3xl font-bold mb-2">1</div>
+            <h3 className="text-xl font-semibold text-gray-800">Register / Login</h3>
+            <p className="text-gray-600 mt-2">Fill the form and select your mentor.</p>
+          </div>
+
+          {/* Example for future steps */}
+          <div className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
+            <div className="text-pink-500 text-3xl font-bold mb-2">2</div>
+            <h3 className="text-xl font-semibold text-gray-800">Schedule a call</h3>
+            <p className="text-gray-600 mt-2">Choose your preferred time slot easily.</p>
+          </div>
+          <div className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
+            <div className="text-pink-500 text-3xl font-bold mb-2">3</div>
+            <h3 className="text-xl font-semibold text-gray-800">Make a payment</h3>
+            <p className="text-gray-600 mt-2">Choose a payment method and pay</p>
+          </div>
+          <div className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
+            <div className="text-pink-500 text-3xl font-bold mb-2">4</div>
+            <h3 className="text-xl font-semibold text-gray-800">Connect to mentor</h3>
+            <p className="text-gray-600 mt-2">You will receive a call back from the ranker at the selected date.</p>
+
+          </div>
+        </div>
+      </section>
+      <footer className="bg-gray-800 text-gray-300 py-10 px-8">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+    
+    {/* About Section */}
+    <div>
+      <h1 className="text-2xl font-semibold text-white mb-3">About Us</h1>
+      <p className="text-gray-400 leading-relaxed">
+        A student-driven mentorship platform.<br />
+        Our vision is to make actionable guidance and mentorship accessible 
+        to every student in the world.
+      </p>
+    </div>
+
+    {/* Quick Links */}
+    <div>
+      <h2 className="text-xl font-semibold text-white mb-3">Quick Links</h2>
+      <ul className="space-y-2">
+        <li><a href="#" className="hover:text-white transition">Home</a></li>
+        <li><a href="#" className="hover:text-white transition">Find a Mentor</a></li>
+        <li><a href="#" className="hover:text-white transition">Become a Mentor</a></li>
+        <li><a href="#" className="hover:text-white transition">Contact</a></li>
+      </ul>
+    </div>
+
+    {/* Contact / Socials */}
+    <div>
+      <h2 className="text-xl font-semibold text-white mb-3">Connect With Us</h2>
+      <p className="text-gray-400 mb-2">Email: support@medico-guide.com</p>
+      <div className="flex space-x-4 mt-3">
+        <a href="#" className="hover:text-white transition"><i className="fab fa-facebook"></i></a>
+        <a href="#" className="hover:text-white transition"><i className="fab fa-twitter"></i></a>
+        <a href="#" className="hover:text-white transition"><i className="fab fa-instagram"></i></a>
+        <a href="#" className="hover:text-white transition"><i className="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
   </div>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-    <div className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
-      <div className="text-pink-500 text-3xl font-bold mb-2">1</div>
-      <h3 className="text-xl font-semibold text-gray-800">Register / Login</h3>
-      <p className="text-gray-600 mt-2">Fill the form and select your mentor.</p>
-    </div>
-
-    {/* Example for future steps */}
-    <div className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
-      <div className="text-pink-500 text-3xl font-bold mb-2">2</div>
-      <h3 className="text-xl font-semibold text-gray-800">Schedule a call</h3>
-      <p className="text-gray-600 mt-2">Choose your preferred time slot easily.</p>
-    </div>
-    <div className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
-      <div className="text-pink-500 text-3xl font-bold mb-2">3</div>
-      <h3 className="text-xl font-semibold text-gray-800">Make a payment</h3>
-      <p className="text-gray-600 mt-2">Choose a payment method and pay</p>
-    </div>
-     <div className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
-      <div className="text-pink-500 text-3xl font-bold mb-2">4</div>
-      <h3 className="text-xl font-semibold text-gray-800">Connect to mentor</h3>
-      <p className="text-gray-600 mt-2">You will receive a call back from the ranker at the selected date.</p>
-     
-    </div>
+  {/* Bottom Bar */}
+  <div className="border-t border-gray-700 text-center mt-10 pt-5 text-gray-500 text-sm">
+    © {new Date().getFullYear()} Medico Guide — All Rights Reserved
   </div>
-</section>
+</footer>
+
 
     </div>
   )
 }
 
 export default Home
-
-
-
